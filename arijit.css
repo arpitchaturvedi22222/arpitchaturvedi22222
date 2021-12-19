@@ -1,0 +1,290 @@
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+      background-image:  url("C:\\Users\\Arpit Chaturvedi\\Pictures\\4k pics\\Ganesha_In_Blue(wapking.fm).jpg");
+	  background-position:  center;
+	  background-size: cover;
+      background-repeat: no-repeat;
+      height:1000px;
+      width: 500px
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .menu-bar
+    {
+        background: transparent;
+        text-align: right;
+    }
+    .menu-bar ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .menu-bar ul li
+    {
+        width: 120px;
+        margin: 8px;
+        padding: 8px;
+    }
+    .menu-bar ul li a
+    {
+        text-decoration: none;
+        color: yellow;
+    }
+    .menu-bar ul li:hover
+    {
+        background: black;
+        border-radius: 10px;
+    }
+    .menu-bar .fa
+    {
+        margin-right: 10px;
+    }
+    .sub-menu-1
+    {
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1
+    {
+        display: block;
+        position: absolute;
+        background: rgb(255,77,13);
+        margin-top: 5px;
+        margin-left: -5px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul
+    {
+        display: block;
+        margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li
+    {
+        width: 150px;
+        padding: 8px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0px;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+    {
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+    {
+        color: black;
+        transition: all 0.8em;
+    }
+    .fa-arrow-right
+    {
+        float: right;
+    }
+    .sub-menu-2
+    {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2
+    {
+       position: absolute;
+       display: block;
+       margin-top: -20px;
+       margin-left: 158px;
+       background: rgb(255,77,13);
+    }
+    /*middle*/
+    .middle
+    {
+        background: transparent;
+        color: #fff;
+        height: 900px;
+    }
+     .heading
+    {
+        background: transparent;
+        text-align: center;
+    }
+    .heading ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .heading ul li
+    {
+        width: 120px;
+        margin: 8px;
+        padding: 8px;
+    }
+    .image
+    {
+    	height: 200px;
+    	width: 200px;
+    	margin-left: 15px; 
+    	margin-top: fixed;
+    }
+    .name
+    {
+    	color: black;
+    	margin-left: 15px;
+    	margin-bottom: 5px;
+    }
+    .music
+    {
+    	background: transparent;
+    }
+    .music .music-1
+    {
+    	margin-left: 15px;
+    }
+    .music .music-1 a
+    {
+    	text-decoration: none;
+    	color: black;
+    }
+    .music .music-1 a:hover
+    {
+    	border-radius: yellow;
+        color: yellow;
+        transition: all 0.6s;
+    }
+    .music .music-1
+    {
+        display: block;
+        margin-bottom: 0px;
+        font-size: 0.97em;
+        transition: all 0.6s;
+
+    }
+
+
+
+
+    /*----------------------------------------------------------footer---------------------------------------------------- */
+
+
+
+    .footer
+    {
+        background-image: url('https://cdn.pixabay.com/photo/2017/03/13/20/48/guitar-2141119_1280.jpg');
+        color: #fff;
+        height: 400px;
+    }
+    .footer .footer-content
+    {
+        height:367px;
+        display: flex;
+    }
+    .footer .footer-content .footer-section
+    {
+        flex: 1;
+        padding: 25px;
+    }
+    .footer .footer-content h1,
+    .footer .footer-content h2
+    {
+        color: yellow;
+    }
+    .footer .footer-content .about h1 span
+    {
+        color: #f4bdad;
+    }
+    .footer .footer-content .about .contact span
+    {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    .footer .footer-content .about .socials a
+    {
+        border: 1px solid gray;
+        width: 45px;
+        height: 41px;
+        padding-top: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+        border-radius: 5px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .about .socials a:hover
+    {
+        border: 1px solid yellow;
+        color: yellow;
+        transition: all 0.6s;
+    }
+    .footer .footer-content .links
+    {
+        display: block;
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        transition: all 0.6s;
+
+    }
+    .footer .footer-content .links ul a
+    {
+       text-decoration: none;
+       color: white;
+    }
+    .footer .footer-content .links ul a:hover
+    {
+        color: yellow;
+        margin-left: 15px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        background: #272727;
+        color: #bebdbd;
+        margin-bottom: 10px;
+        line-height: 1em;
+        padding: 1em 6em;
+        border: none;
+    }
+    .footer .footer-content .contact-form .contact-input:focus
+    {
+        background: black;
+    }
+    .footer .footer-content .contact-form .contact-btn
+    {
+        float: right;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        float: right;
+    }
+    .btn
+    {
+        padding: 0.5rem 1rem;
+        background: black;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+    .btn-big
+    {
+        padding: 1rem 1.9rem
+        height: 2.5rem;
+    }
+    .btn:hover
+    {
+        color: black !important;
+        background: yellow;
+    }
+    .footer .footer-bottom
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        border: 1px solid red;
+    }

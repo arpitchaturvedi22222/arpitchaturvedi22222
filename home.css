@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+*{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+      background-image:  url("C:\\Users\\Arpit Chaturvedi\\Pictures\\4k pics\\Ganesha_In_Blue(wapking.fm).jpg");
+	  background-position:  center;
+	  background-size: cover;
+      background-repeat: no-repeat;
+      height:100%;
+      width: 100%;
+      box-sizing: border-box;
+      font-family: 'Crimson Text', serif;
+    }
+    .menu-bar
+    {
+        max-width: 100%;
+        background: black;
+        text-align: left;
+    }
+    .menu-bar ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .menu-bar ul li
+    {
+        width: 120px;
+        margin: 7px;
+        padding: 7px;
+    }
+    .menu-bar ul li a
+    {
+        text-decoration: none;
+        color: yellow;
+    }
+    .menu-bar ul li:hover
+    {
+        background: transparent;
+    }
+    .menu-bar .fa
+    {
+        margin-right: 10px;
+    }
+    .sub-menu-1
+    {
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1
+    {
+        display: flex;
+        position: absolute;
+        background: transparent;
+        margin-top: 5px;
+        margin-left: -5px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul
+    {
+        display: block;
+        margin: 20px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li
+    {
+        width: 150px;
+        padding: 8px;
+        border-bottom: 1px;
+        background: transparent;
+        border-radius: 0px;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+    {
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+    {
+        color: white;
+        transition: all 0.8em;
+    }
+    .fa-arrow-right
+    {
+        float: right;
+    }
+    .sub-menu-2
+    {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2
+    {
+       position: absolute;
+       display: block;
+       margin-top: -20px;
+       margin-left: 158px;
+       background: transparent;
+    }
+    .brand img{
+        width: 70%;
+         padding: 0 10px;
+        border-radius: 45%;
+    }
+
+
+
+    /*------------------------------------------------------------middle---------------------------------------------------*/
+
+
+
+    .middle
+    {
+        background: transparent;
+        color: #fff;
+        height: 100%;
+    }
+     .heading
+    {
+        background: transparent;
+        text-align: center;
+    }
+    .heading ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .heading ul li
+    {
+        width: 120px;
+        margin: 8px;
+        padding: 8px;
+    }
+    .image
+    {
+    	height: 200px;
+    	width: 200px;
+    	margin-left: 15px; 
+    	margin-top: fixed;
+    }
+    .name
+    {
+    	color: black;
+    	margin-left: 15px;
+    	margin-bottom: 5px;
+    }
+    .para p
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .colorchange
+    {
+        animation: colorchange 2s infinite;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .box-content{
+        min-height: 100%;
+        background-color: black;
+        color: white;
+        font-family: 'Fruktur', cursive;
+        display: flex;
+        width: 90%;
+        margin: 27px auto;
+        border-radius: 20px;
+        padding: 34px;
+        background-image: url('https://cdn.pixabay.com/photo/2017/03/13/20/48/guitar-2141119_1280.jpg'); 
+    }   
+    .box-content-1{
+        margin-top: 70px;
+        text-align: left;
+        font-size: 1em
+    }
+    .para p
+    {
+        font-size: 22px;
+        line-height: 2es;
+        margin-bottom: 32px;
+        color: white;
+        margin-right: 10px;
+        margin-left:  10px;
+        margin-top:   0px;
+        margin-bottom: 20px;
+    }
+    .colorchange-1
+    {
+        animation: colorchange 20s infinite;
+        float: left;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+     @keyframes colorchange{
+        0%{color: red;}
+        25%{color: green;}
+        50%{color: blue;}
+        75%{color: yellow;}
+        100%{color: white;}
+    }
+
+
+
+
+    /*----------------------------------------------------------footer---------------------------------------------------- */
+
+
+
+    .footer
+    {
+        background-image: url('https://cdn.pixabay.com/photo/2017/03/13/20/48/guitar-2141119_1280.jpg');
+        color: #fff;
+        height: 100%;
+    }
+    .footer .footer-content
+    {
+        height:367px;
+        display: flex;
+    }
+    .footer .footer-content .footer-section
+    {
+        flex: 1;
+        padding: 25px;
+    }
+    .footer .footer-content h1,
+    .footer .footer-content h2
+    {
+        color: yellow;
+    }
+    .footer .footer-content .about h1 span
+    {
+        color: #f4bdad;
+    }
+    .footer .footer-content .about .contact span
+    {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    .footer .footer-content .about .socials a
+    {
+        border: 1px solid gray;
+        width: 10%;
+        height: 10%;
+        padding-top: 10px;
+        margin-right: 10px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+        border-radius: 5px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .about .socials a:hover
+    {
+        border: 3px solid red;
+        color: #bd635d;
+        transition: all 0.6s;
+    }
+    .footer .footer-content .links
+    {
+        display: block;
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        transition: all 0.6s;
+
+    }
+    .footer .footer-content .links ul a
+    {
+       text-decoration: none;
+       color: white;
+    }
+    .footer .footer-content .links ul a:hover
+    {
+        color: yellow;
+        margin-left: 15px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        background: #272729;
+        color: #bebdbd;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        line-height: 1em;
+        padding: 1em 6em;
+        border: none;
+    }
+    .footer .footer-content .contact-form .contact-input:focus
+    {
+        background: black;
+    }
+    .footer .footer-content .contact-form .contact-btn
+    {
+        float: right;
+        margin-right: 30%;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        float: right;
+    }
+    .btn
+    {
+        padding: 0.5rem 1rem;
+        background: black;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+    .btn-big
+    {
+        padding: 1rem 1.9rem
+        height: 2.5rem;
+    }
+    .btn:hover
+    {
+        color: black !important;
+        background: yellow;
+    }
+    .footer .footer-bottom
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #bf308f;
+        color: black;
+        text-align: center;
+        padding-top: 1px;
+        border: 1px solid red;
+    }
+    .colorchange-2
+    {
+        animation: colorchange-2 10s infinite;
+    }
+     @keyframes colorchange-2{
+         0%{color: red;}
+        10%{color: green;}
+        20%{color: blue;}
+        30%{color: yellow;}
+        40%{color: white;}
+        50%{color: #aefa98;}
+        60%{color: #a315b0;}
+        70%{color: #bf308f;}
+        80%{color: #660011;}
+        90%{color: #006166;}
+        100%{color: black;}
+    }

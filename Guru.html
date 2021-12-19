@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>AP Music</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    *
+    {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body
+    {
+      background-image:  url("C:\\Users\\Arpit Chaturvedi\\Pictures\\4k pics\\Ganesha_In_Blue(wapking.fm).jpg");
+	  background-position:  center;
+	  background-size: cover;
+      background-repeat: no-repeat;
+      height:1000px;
+      width: 500px
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+    .menu-bar
+    {
+        background: rgb(255,77,13);
+        text-align: center;
+    }
+    .menu-bar ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .menu-bar ul li
+    {
+        width: 120px;
+        margin: 8px;
+        padding: 8px;
+    }
+    .menu-bar ul li a
+    {
+        text-decoration: none;
+        color: yellow;
+    }
+    .menu-bar ul li:hover
+    {
+        background: black;
+        border-radius: 10px;
+    }
+    .menu-bar .fa
+    {
+        margin-right: 10px;
+    }
+    .sub-menu-1
+    {
+        display: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1
+    {
+        display: block;
+        position: absolute;
+        background: rgb(255,77,13);
+        margin-top: 5px;
+        margin-left: -5px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul
+    {
+        display: block;
+        margin: 10px;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li
+    {
+        width: 150px;
+        padding: 10px;
+        border-bottom: 1px dotted #fff;
+        background: transparent;
+        border-radius: 0px;
+        text-align: left;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li:last-child
+    {
+        border-bottom: none;
+    }
+    .menu-bar ul li:hover .sub-menu-1 ul li a:hover
+    {
+        color: black;
+    }
+    .fa-arrow-right
+    {
+        float: right;
+    }
+    .sub-menu-2
+    {
+        display: none;
+    }
+    .hover-me:hover .sub-menu-2
+    {
+       position: absolute;
+       display: block;
+       margin-top: -20px;
+       margin-left: 158px;
+       background: rgb(255,77,13);
+    }
+    /*middle*/
+    .middle
+    {
+        background: transparent;
+        color: #fff;
+        height: 900px;
+    }
+     .heading
+    {
+        background: transparent;
+        text-align: center;
+    }
+    .heading ul
+    {
+        display: inline-flex;
+        list-style: none;
+        color: yellow;
+    }
+    .heading ul li
+    {
+        width: 120px;
+        margin: 8px;
+        padding: 8px;
+    }
+    .para p
+    {
+        font-size: 22px;
+        line-height: 2es;
+        margin-bottom: 32px;
+        color: black;
+        margin-right: 10px;
+        margin-left:  10px;
+        margin-top:   0px;
+        margin-bottom: 20px;
+    }
+    /*footer */
+    .footer
+    {
+        background: #686fdf;
+        color: #fff;
+        height: 400px;
+    }
+    .footer .footer-content
+    {
+        height:367px;
+        display: flex;
+    }
+    .footer .footer-content .footer-section
+    {
+        flex: 1;
+        padding: 25px;
+    }
+    .footer .footer-content h1,
+    .footer .footer-content h2
+    {
+        color: yellow;
+    }
+    .footer .footer-content .about h1 span
+    {
+        color: #f4bdad;
+    }
+    .footer .footer-content .about .contact span
+    {
+        display: block;
+        font-size: 1.1em;
+        margin-bottom: 8px;
+    }
+    .footer .footer-content .about .socials a
+    {
+        border: 1px solid gray;
+        width: 45px;
+        height: 41px;
+        padding-top: 5px;
+        margin-right: 5px;
+        text-align: center;
+        display: inline-block;
+        font-size: 1.3em;
+        border-radius: 5px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .about .socials a:hover
+    {
+        border: 1px solid yellow;
+        color: yellow;
+        transition: all 0.6s;
+    }
+    .footer .footer-content .links
+    {
+        display: block;
+        margin-bottom: 0px;
+        font-size: 1.2em;
+        transition: all 0.6s;
+
+    }
+    .footer .footer-content .links ul a
+    {
+       text-decoration: none;
+       color: black;
+    }
+    .footer .footer-content .links ul a:hover
+    {
+        color: yellow;
+        margin-left: 15px;
+        transition: all 0.4s;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        background: #272727;
+        color: #bebdbd;
+        margin-bottom: 10px;
+        line-height: 1em;
+        padding: 1em 6em;
+        border: none;
+    }
+    .footer .footer-content .contact-form .contact-input:focus
+    {
+        background: black;
+    }
+    .footer .footer-content .contact-form .contact-btn
+    {
+        float: right;
+    }
+    .footer .footer-content .contact-form .contact-input
+    {
+        float: right;
+    }
+    .btn
+    {
+        padding: 0.5rem 1rem;
+        background: black;
+        color: white;
+        border: 1px solid transparent;
+        border-radius: .25rem;
+    }
+    .btn-big
+    {
+        padding: 1rem 1.9rem
+        height: 2.5rem;
+    }
+    .btn:hover
+    {
+        color: black !important;
+        background: yellow;
+    }
+    .footer .footer-bottom
+    {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding-top: 10px;
+        border: 1px solid red;
+    }
+</style>
+</head>
+    <body>
+        <div class ="menu-bar">
+            <ul>
+               <li class="active"><a href="HOME.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;<font size="2">Home</font></a></li>
+               <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i></i>&nbsp;<font size="2">Old Songs</font></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Lata Mangeshkar.html"><font size="2">Lata Ji</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Mohammad Rafi.html"><font size="2">Mohd Rafi</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Udit Narayan.html"><font size="2">Udit Narayan</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Sonu Nigam.html"><font size="2">Sonu Nigam</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Kumar Sanu.html"><font size="2">Kumar Sanu</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Kishore Kumar.html"><font size="2">Kishore Kumar</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Asha Bhosale.html"><font size="2">Asha Bhosale</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Alka Yagni.html"><font size="2">Alka Yagni</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+             </li>
+             <li><a href="#"><i class="fa fa-music" aria-hidden="true"></i></i>&nbsp;<font size="2">New Songs</font></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="Arijit Singh.html"><font size="2">Arijit Singh</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Arman.html"><font size="2">Arman</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Asees Kaur.html"><font size="2">Asees Kaur</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Dhvani.html"><font size="2">Dhvani</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Guru.html"><font size="2">Guru</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Jubin.html"><font size="2">Jubin</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Neha Kakkar.html"><font size="2">Neha Kakkar</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                        <li><a href="Vishal Mishra.html"><font size="2">Vishal Mishra</font></a><i class="fa fa-arrow-right" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+             </li>
+             <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i><font size="2">Contact</font></a>
+                <div class="sub-menu-1">
+                    <ul>
+                        <li class="hover-me"><a href="#"></a><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;<font size="2">Phone No.</font></i>
+                            <div class="sub-menu-2">
+                                <ul>
+                                 <li><font size="2">6306638533</font></li>
+                                 <li><font size="2">9695239641</font></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+              </li>
+            </ul>
+        </div>
+        <div class="middle">
+            <div class="heading">
+                <p class="heading-1"><font size="12"><marquee direction="left"><i>apMusic</i></marquee></font></p>
+            </div>
+            <h1 class="name">Guru Randhawa</h1>
+            <div class="image">    
+                <img src="D:\music website 1\Musician\Guru.jpeg"/ height="150">
+              </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h1 class="logo-text"><span>AP Music</span></h1><br>
+                    <p>
+                        It is the site for enjoying music and have a great experience of the music.For refreshing the mind and soul.
+                    </p><br>
+                    <div class="contact">
+                        <span><i class="fa fa-phone-square" aria-hidden="true"></i>&nbsp;&nbsp;9695239641</span>
+                        <span><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;&nbsp;arpitchaturvedi22222@gmail.com</span>
+                    </div>
+                    <div class="socials">
+                        <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+                        <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section links">
+                    <h2>Quick Links</h2><br>
+                    <ul>
+                        <a href="#">
+                            <li>Home</li><br>
+                        </a>
+                        <a href="#">
+                            <li>Old Songs</li><br>
+                        </a>
+                        <a href="#">
+                            <li>New Songs</li><br>
+                        </a>
+                        <a href="#">
+                            <li>Terms and Conditions</li><br>
+                        </a>
+                        <a href="#">
+                            <li>About Singers</li><br>
+                        </a>
+                    </ul>
+                </div>
+                <div class="footer-section contact-form">
+                    <h2>Contact Us</h2><br>
+                    <input type="email" name="email" class="text-input contact-input" placeholder="your email address......"><br>
+                    <textarea name="message" class="text-tnput contact-input" placeholder="   your message......"></textarea><br>
+                     <button type="Submit" class="btn btn-big contact-btn">
+                        <i class="fa fa-share-square" aria-hidden="true"></i>&nbsp;&nbsp;Send
+                     </button>
+                </div>
+                <div class="footer-bottom">
+                    <font>&copy;&nbsp;Designed by Arpit Chaturvedi</font>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
